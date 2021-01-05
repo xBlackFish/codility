@@ -26,3 +26,23 @@ function binaryGap(n) {
     return gapLength;
 
 }
+
+const factorial = n => {
+    
+   const cache = {};
+
+   if(n < 2) {
+       return 1;
+   }
+
+
+   if(!(n in cache)) {
+        cache[n] = n * factorial(n-1)
+   }
+
+
+   return cache[n];
+
+}
+
+console.log(factorial(6));
