@@ -14,7 +14,7 @@ For example, given:
   X = 10
   Y = 85
   D = 30
-  
+
 the function should return 3, because the frog will be positioned as follows:
 
 after the first jump, at position 10 + 30 = 40
@@ -25,6 +25,8 @@ Write an efficient algorithm for the following assumptions:
 X, Y and D are integers within the range [1..1,000,000,000];
 X ≤ Y.
 **/
+
+//Complexity O(1) ;)
 
 function solution(X, Y, D) {
     return Math.ceil((Y-X)/D);
