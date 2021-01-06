@@ -30,9 +30,10 @@ all but one of the values in A occur an even number of times.
 **/
 
 
-/* 0 n**2 **/ 
+/* 0(n**2) **/ 
 const solution = a => a.filter((e, i, arr) => arr.indexOf(e) === arr.lastIndexOf(e))[0];
 
+/* 0(n) **/  
 function solution1(a) {
     const counted = a.reduce((acc, curr) => {
         acc[curr] ? acc[curr]++ : acc[curr] = 1;
