@@ -59,5 +59,3 @@ function solution(A) {
 
     return Math.min(...numbers);
 }
-
-console.log(solution([3, 1, 2, 4, 3]))
